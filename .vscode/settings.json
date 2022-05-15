@@ -3,5 +3,6 @@
     "deno.lint": true,
     "deno.unstable": true,
     "deno.formatOnSave": true,
-    "deno.defaultFormatter": "denoland.vscode-deno"
+    "deno.defaultFormatter": "denoland.vscode-deno",
+    "cSpell.words": ["Nessie"]
 }

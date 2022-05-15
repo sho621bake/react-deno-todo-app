@@ -1,13 +1,16 @@
-const configMySQL = {
-    migrationFolder: `./migrations`,
-    connection: {
-        hostname: 'localhost',
-        port: 3306,
-        username: 'root',
-        password: 'root',
-        db: 'deno-todo',
-    },
-    dialect: 'mysql',
+import { ClientMySQL, NessieConfig, ClientConfig } from './deps.ts'
+
+const connectionConfig: ClientConfig = {
+    hostname: 'localhost',
+    port: 3306,
+    username: 'root',
+    db: 'deno-db',
 }
 
-export default configMySQL
+const config: NessieConfig = {
+    client: new ClientMySQL(connectionConfig),
+    migrationFolders: ['./db/migrations'],
+    seedFolders: ['./db/seeds'],
+}
+
+export default config

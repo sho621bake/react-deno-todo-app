@@ -1,2 +1,5 @@
 export { Application, Router } from 'https://deno.land/x/oak@v6.5.0/mod.ts'
 export type { RouterContext } from 'https://deno.land/x/oak@v6.5.0/mod.ts'
+export { ClientMySQL } from 'https://deno.land/x/nessie/mod.ts'
+export type { NessieConfig } from 'https://deno.land/x/nessie/mod.ts'
+export type { ClientConfig } from 'https://deno.land/x/mysql@v2.10.2/mod.ts'
