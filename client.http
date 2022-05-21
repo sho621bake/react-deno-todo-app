@@ -1,1 +1,6 @@
 GET http://localhost:8000/
+
+###
+
+GET http://localhost:8000/todos
+#TODO DBにシード入れておく

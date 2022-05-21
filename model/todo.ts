@@ -1,7 +1,7 @@
 import { db } from '../db/db_connector.ts'
 import { Model, DataTypes } from '../deps.ts'
 
-class Todo extends Model {
+export class Todo extends Model {
     static table = 'todos'
     static timestamps = true
 
