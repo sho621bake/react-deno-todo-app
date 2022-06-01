@@ -6,3 +6,8 @@ export async function getAll(ctx: RouterContext) {
     ctx.response.status = Status.OK
     ctx.response.body = { todos }
 }
+
+export async function get(ctx: RouterContext) {
+    const todos = await Todo.select('*').find(1)
+    ctx.response.body = { todos }
+}

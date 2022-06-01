@@ -5,3 +5,4 @@ export const router = new Router()
 
 router.get('/', root.Home)
 router.get('/todos', todos.getAll)
+router.get('/todos/:id', todos.get)
