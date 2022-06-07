@@ -1,5 +1,5 @@
 import { Todo } from '../model/todo.ts'
-import { RouterContext, Status } from '../deps.ts'
+import { RouterContext, Status, helpers } from '../deps.ts'
 
 export async function getAll(ctx: RouterContext) {
     const todos = await Todo.all()
@@ -8,6 +8,7 @@ export async function getAll(ctx: RouterContext) {
 }
 
 export async function get(ctx: RouterContext) {
-    const todos = await Todo.select('*').find(1)
-    ctx.response.body = { todos }
+    const { id } = helpers.getQuery(ctx, { mergeParams: true })
+    const todo = await Todo.select('*').find(id)
+    ctx.response.body = { todo }
 }
