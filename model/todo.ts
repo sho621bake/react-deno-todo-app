@@ -7,7 +7,7 @@ export class Todo extends Model {
 
     static fields = {
         id: { primaryKey: true, autoIncrement: true },
-        done: DataTypes.INTEGER,
+        done: DataTypes.BOOLEAN,
         title: DataTypes.STRING,
     }
 
