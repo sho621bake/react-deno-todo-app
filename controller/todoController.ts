@@ -12,3 +12,11 @@ export async function get(ctx: RouterContext) {
     const todo = await Todo.select('*').find(id)
     ctx.response.body = { todo }
 }
+
+export async function update(ctx: RouterContext) {
+    const { id } = helpers.getQuery(ctx, { mergeParams: true })
+    const todo = await Todo.where({ id: `${id}` }).update({
+        done: 1,
+    })
+    ctx.response.body = { todo }
+}

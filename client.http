@@ -7,3 +7,7 @@ GET http://localhost:8000/todos
 ###
 
 GET http://localhost:8000/todos/1
+
+###
+PUT http://localhost:8000/todos/2
+content-type: application/json
