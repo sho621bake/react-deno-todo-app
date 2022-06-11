@@ -1512,6 +1512,11 @@
     schema-utils "^3.0.0"
     source-map "^0.7.3"
 
+"@popperjs/core@^2.11.2":
+  version "2.11.5"
+  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.5.tgz#db5a11bf66bdab39569719555b0f76e138d7bd64"
+  integrity sha512-9X2obfABZuDVLCgPK9aX0a/x4jaOEweTTWE2+9sr0Qqqevj2Uv5XorvusThmc9XGYpS9yI+fhh8RTafBtGposw==
+
 "@rollup/plugin-babel@^5.2.0":
   version "5.3.1"
   resolved "https://registry.yarnpkg.com/@rollup/plugin-babel/-/plugin-babel-5.3.1.tgz#04bc0608f4aa4b2e4b1aebf284344d0f68fda283"
@@ -7003,6 +7008,13 @@ postcss@^8.3.5, postcss@^8.4.14, postcss@^8.4.4, postcss@^8.4.7:
     nanoid "^3.3.4"
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
+
+preline@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/preline/-/preline-1.0.6.tgz#f4f129ade60b534422f77fd1e6fdc5f9612a5da5"
+  integrity sha512-k4V1UACfGWJTQ5GTNSvy1K/t/1IDOq/PSDd4tsVnLqq8Ba7ammz4CASpb3sJ/lSDDG5BnyDeHZmZQz0pe30ofA==
+  dependencies:
+    "@popperjs/core" "^2.11.2"
 
 prelude-ls@^1.2.1:
   version "1.2.1"
