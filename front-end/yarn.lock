@@ -7009,10 +7009,10 @@ postcss@^8.3.5, postcss@^8.4.14, postcss@^8.4.4, postcss@^8.4.7:
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
-preline@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/preline/-/preline-1.0.6.tgz#f4f129ade60b534422f77fd1e6fdc5f9612a5da5"
-  integrity sha512-k4V1UACfGWJTQ5GTNSvy1K/t/1IDOq/PSDd4tsVnLqq8Ba7ammz4CASpb3sJ/lSDDG5BnyDeHZmZQz0pe30ofA==
+preline@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/preline/-/preline-1.1.0.tgz#8cc11745abbd6af9dd7bfa230dc6b6a34e53cdb5"
+  integrity sha512-GbfqymnmDo/dZuh3sjNwAIBQQbhF6/FKryOMQAT1KeQupDJW1FTTpAlYMTly+XTBWz4CZHECVlKjDNEpY78wHg==
   dependencies:
     "@popperjs/core" "^2.11.2"
 
@@ -8099,7 +8099,7 @@ symbol-tree@^3.2.4:
   resolved "https://registry.yarnpkg.com/symbol-tree/-/symbol-tree-3.2.4.tgz#430637d248ba77e078883951fb9aa0eed7c63fa2"
   integrity sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==
 
-tailwindcss@^3.0.2:
+tailwindcss@^3.0.2, tailwindcss@^3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-3.1.2.tgz#b5607d17adb6cbb11a13738cc5fdf3e5527dcd7a"
   integrity sha512-yJ6L5s1U5AeS5g7HHy212zdQfjwD426FBfm59pet/JsyneuZuD4C2W7PpJEg4ppisiB21uLqtNagv8KXury3+Q==
