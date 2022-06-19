@@ -1,25 +1,28 @@
-import React from 'react'
-import logo from './logo.svg'
+import React, { useState } from 'react'
 import './App.css'
+import TodoList from './components/TodoList'
+import { Todo } from '../Types'
 
-function App() {
+const initialState: Todo[] = [
+    {
+        id: 1,
+        title: 'First Todo',
+        done: false,
+    },
+    {
+        id: 2,
+        title: 'Second Todo',
+        done: true,
+    },
+]
+
+const App: React.FC = () => {
+    const [todos, setTodos] = useState(initialState)
+
     return (
-        <div className='App'>
-            <header className='App-header'>
-                <img src={logo} className='App-logo' alt='logo' />
-                <p>
-                    Edit <code>src/App.tsx</code> and save to reload.
-                </p>
-                <a
-                    className='App-link'
-                    href='https://reactjs.org'
-                    target='_blank'
-                    rel='noopener noreferrer'>
-                    Learn React
-                </a>
-            </header>
+        <div>
+            <TodoList setTodos={setTodos} todos={todos} />
         </div>
     )
 }
-
 export default App
