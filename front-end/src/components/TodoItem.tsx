@@ -11,13 +11,13 @@ const TodoItem: React.FC<Props> = ({ todo, handleDone, handleDelete }) => {
     return (
         <li
             className={
-                'flex justify-between items-center my-20 bg-white border shadow-sm rounded-xl p-4 md:p-5 dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7] dark:text-gray-400' +
+                'flex justify-between items-center my-20 bg-white border shadow-sm rounded-xl p-4 md:p-5' +
                 `${todo.done ? 'done' : ''}`
             }>
             <label>
                 <input
                     type='checkbox'
-                    className='shrink-0 mt-0.5 border-gray-200 rounded text-blue-600 pointer-events-none focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800'
+                    className='shrink-0 mt-0.5 border-gray-200 rounded text-blue-600 pointer-events-none focus:ring-blue-500'
                     onClick={() => handleDone(todo)}
                     defaultChecked={todo.done}
                 />
