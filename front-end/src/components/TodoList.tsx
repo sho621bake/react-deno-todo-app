@@ -26,7 +26,8 @@ const TodoList: React.FC<Props> = ({ todos, setTodos }) => {
         )
     }
 
-    const handleDelete = (todo: Todo) => {
+    const handleDelete = async (todo: Todo) => {
+        await axios.delete(`http://localhost:8000/todos/${todo.id}`)
         setTodos((prev) => prev.filter((t) => t.id !== todo.id))
     }
 
