@@ -1,3 +1,4 @@
+import axios from 'axios'
 import React, { useState } from 'react'
 import { Todo } from '../../Types'
 
@@ -14,6 +15,11 @@ const TodoInput: React.FC<Props> = ({ setTodos, todos }) => {
     }
 
     const handleSubmit = () => {
+        axios.post('http://localhost:8000/todos/', {
+            title: inputTitle,
+            done: false,
+        })
+
         setCount(count + 1)
 
         const newTodo: Todo = {
